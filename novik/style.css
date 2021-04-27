@@ -1,0 +1,511 @@
+
+.container {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.rating-mini {
+	display: inline-block;
+	font-size: 0;
+}
+.rating-mini span {
+	padding: 0;
+	font-size: 20px;
+	line-height: 1;
+	color: lightgrey;
+}
+.rating-mini > span:before {
+	content: '★';
+}
+.rating-mini > span.active {
+	color: black;
+}
+
+.language_fly {
+  
+  width: 0;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  background: #FFFFFF;
+}
+header {
+  width: 100%;
+  height: 79px;
+  display: flex;
+ align-items: center;
+  justify-content: center;
+  
+}
+.hamb {
+  opacity: 0;
+}
+.hamburger-menu {
+  
+}
+.menu_box {
+  visibility: hidden;
+}
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  visibility: visible;
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: absolute;
+  top: 30px;
+  left: 77%;
+  width: 26px;
+  height: 26px;
+  
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+/* контейнер меню */
+.menu__box {
+  display: flex;
+  flex-direction: column;
+  display: hidden;
+  position: fixed;
+  visibility: visible;
+  top: 0;
+  right: -100%;
+  width: 150px;
+  height: 100%;
+  margin: 0;
+  padding: 20px 0;
+  list-style: none;
+  justify-content: space-around;
+  
+  background-color: #FFFFFF;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__box li {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px;
+  color: #333;
+  font-family: Gilroy-Bold;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.menu__item {
+  transition-duration: .25s;
+  
+}
+
+
+ul {
+  
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+ align-items: ;
+  list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+.menu {
+  width: 65%;
+  height: 100%;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  border-bottom: 1px solid;
+}
+.menu li, div, a {
+  font-style: Gilroy-Bold;
+  font-size: 18px;
+  color: #828282;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+li {
+    color: #fff;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+.contacts {
+  display: flex;
+  justify-content: center;
+  
+}
+.novik {
+ width: 100%;
+ 
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+.blocks-blocks {
+display: flex;
+justify-content: center;
+}
+
+
+.blocks {
+ display: flex;
+  justify-content: space-between;
+  width: 65%;
+  align-items: center;
+  padding-bottom: 3%;
+}
+h {
+  font-family: Gilroy-Bold;
+  font-size: 47px;
+  line-height: 59px;
+  color:  black;
+}
+
+h1 {
+  font-family: Gilroy-Bold;
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  color:  #070707;
+}
+.blocks p {
+  padding-top: 10%;
+}
+.colortext {
+  color: black;
+}
+.language {
+  transform: rotate(-90deg);
+    font-family: Gilroy-Bold;
+    font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+  padding-top: 3%;
+  display: flex;
+  flex-wrap: nowrap;
+ 
+}
+.blocks p {
+  padding-left: 15%;
+}
+picture {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  
+}
+picture img{
+ text-align: center;
+padding-bottom: 20%;
+  width: 100%;
+   max-width: 943px;
+}
+
+
+.about {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #F6F6F6;
+}
+.about-block {
+  max-width: 485px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  width: 361px;
+  height: 261px;
+  text-align: center;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+figure {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+ p {
+  text-align: center;
+  font-size: 18px;
+  font-family: Gilroy-Medium;
+  line-height: 22px;
+  color: #070707;
+}
+.skills-block {
+  
+}
+.row-skills {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.row-skills figcaption {
+  font-family: Gilroy-Bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+  text-align: center;
+  margin-top: 23px;
+  margin-bottom: 41px;
+}
+.portfolio {
+ text-align: center;
+  background: #F6F6F6;
+}
+.portfolio h1 {
+  padding-top: 112px;
+}
+.portfolio img {
+  padding-top: 10px;
+ width: 65%;
+}
+.description {
+  font-family: Gilroy-Medium;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: black;
+ padding-bottom: 96px;
+ padding-top: 45px;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contacts p {
+  padding-bottom: 10px;
+}
+
+.send button {
+  display: flex;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 16px;
+  color: white;
+  background-color: black;
+  width: 180px;
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.send button a {
+  border: none;
+  background-color: black;
+}
+.icons {
+  padding-top: 80px;
+   text-align: center;
+}
+.like {
+  text-align: center;
+  color: #828282;
+  font-family: Gilroy-Medium;
+  font-size: 14px;
+  line-height: 17px;
+  padding-bottom: 123px;
+  padding-top: 46px;
+}
+@media screen and (max-width: 375px){
+  .language_fly {
+    display: flex;
+    flex-direction: row;
+    padding-left: 90%;
+    padding-bottom: 45%;
+    width: 78px;
+    margin-top: -25px;
+    transform: rotate(90deg);
+    font-family: Gilroy-Bold;
+    font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+  padding-top: ;
+  }
+  header {
+    height: 10px;
+  
+  }
+  .hamb {
+    opacity: 1;
+    
+  }
+  .menu_btn {
+   display: block;
+    visibility: visible;
+   width: 26px;
+  
+  }
+  
+  .menu__box {
+    width: 70%;
+    justify-content: flex-start;
+    
+  }
+  .menu__box a {
+    font-size: 34px;
+    font-style: Gilroy-Bold;
+    line-height: 42px;
+  }
+  .menu {
+    visibility: hidden;
+  }
+  h1 {
+    color: #262626;
+  }
+  .novik {
+    width: 100%;
+    
+    
+  }
+  .blocks {
+    width: 90%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .blocks p{
+    margin-left: -3%;
+  }
+  .language {
+    display: none;
+  }
+  .center-img img {
+    width: 140%;
+    
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  
+  .about-block {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .row-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .skills-block {
+   width: 60%; 
+  }
+  .portfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .portfolio img {
+    width: 90%;
+    
+  }
+  .contacts {
+    display: flex;
+    justify-content: center;
+  }
+  .icons img{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 502px) {
+  .menu a {
+    font-size: 14px;
+  }
+}
+  @media screen and (max-width: 532px) {
+    .language {
+    padding-top: 130px;
+  }
+  }
+@media screen and (max-width: 599px) {
+  .language {
+    font-size: 12px;
+    margin-left: -55px;
+  }
+  .blocks p {
+    font-size: 14px;
+    padding-left: 15px;
+  }
+  .blocks h {
+    
+  }
+}
+@media screen and (max-width: 773px) {
+  .row-skills {
+    display: flex;
+    flex-direction: column;
+  }
+}
